@@ -1,0 +1,4 @@
+.searchBox { position: relative; }
+.searchBox .searchBoxInput { min-width: 250px; max-width: 480px; padding: 8px 30px; border-radius: 50px; border: 1px solid #94a4ca; position: relative; }
+.searchBox .searchBoxInput:focus {outline: none;}
+.searchBox .searchBoxIcon { position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 20px; }

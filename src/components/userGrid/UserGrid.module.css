@@ -1,0 +1,101 @@
+.actionIcon {
+  text-align: center;
+  color: #790098;
+}
+
+.actionIcon:hover {
+  background-color: rgb(247, 246, 246);
+  cursor: grab;
+}
+
+.actionsDiv {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px 0;
+  padding-right: 15px;
+  border-bottom: 1px solid #00000029;
+}
+
+.FilterMenu .filterBtn,
+.FilterMenu .filterSearchBtn {
+  display: flex;
+  align-items: center;
+}
+.filterSearchBtn .searchBox {
+  padding: 5px 0;
+}
+
+.available {
+  color: rgb(37, 96, 37);
+}
+
+.unavailable {
+  color: rgb(203, 26, 26);
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  padding: 3px 25px;
+}
+
+.primaryBtn {
+  background: #7e009e;
+  color: #fff;
+}
+.primaryBtn:hover {
+  background: #65007e;
+  color: #fff;
+}
+
+.primaryBtnOutline {
+  border: 1px solid #7e009e;
+  background: #fff;
+  color: #790098;
+  text-decoration: none;
+}
+.primaryBtnOutline:focus {
+  box-shadow: none;
+}
+.primaryBtnOutline:hover {
+  border: 1px solid #790098;
+  background: #790098;
+  color: #fff;
+}
+
+.calendarIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.modalsContainer
+  .MuiDialog-paper.MuiDialog-paperScrollPaper.MuiDialog-paperWidthSm {
+  min-width: 900px;
+}
+/* .modalsContainer .modalsContent {padding: 0;} */
+.modalsContainer .modalsContent .modal-dialog-footer {
+  position: sticky;
+  bottom: 0;
+  background: #fff;
+  z-index: 9;
+  padding: 16px 24px !important;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.availibilityMainDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.availibilityDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
