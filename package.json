@@ -58,5 +58,8 @@
     "react-toastify": "^10.0.3",
     "typescript": "^5.3.3",
     "web-vitals": "^3.5.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
   }
 }

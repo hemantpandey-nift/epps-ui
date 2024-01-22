@@ -1,0 +1,40 @@
+.d-tree-container {
+  list-style: none;
+  padding: 0;
+}
+
+.d-tree-node {
+  padding: 0.75rem 1.25rem;
+}
+
+.d-tree-toggler.active {
+  transform: rotate(45deg);
+}
+
+.treeList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.treeCol {
+  font-size: small;
+  font-weight: 600;
+  margin-left: 10px;
+  padding: 2px 15px 2px 15px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  background-color: rgb(206, 252, 249);
+}
+
+.regular {
+  background-color: rgb(229, 250, 219);
+}
+
+.premium {
+  background-color: rgb(243, 217, 250);
+}
+
+.delux {
+  background-color: rgb(253, 255, 208);
+}

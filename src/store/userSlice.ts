@@ -7,7 +7,11 @@ export const fetchAllUserList = createAsyncThunk(
   async (params: any, { rejectWithValue }) => {
     try {
       const data: any = await http.get(
-        `${END_POINTS.GET_ALL_USERS}?search=${params.search}&sortBy=${params.sortBy}&order=${params.order}&page=${params.page}&limit=${params.limit}`
+        `${END_POINTS.GET_ALL_USERS}?search=${params?.search ?? ""}&sortBy=${
+          params?.sortBy ?? "name"
+        }&order=${params?.order ?? "asc"}&page=${params?.page ?? 0}&limit=${
+          params?.limit ?? 10
+        }`
       );
 
       return data;
