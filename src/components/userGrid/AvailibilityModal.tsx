@@ -37,7 +37,6 @@ export default function AvailibilityModal({
   const loading: boolean = userData?.loading ?? false;
   const availibilityData: UserAvailibility[] =
     userData?.availibilityData?.availibilityList;
-  console.log("availibilityData:", availibilityData);
   const weekDays: string[] = CONSTANTS.WeekDays;
 
   useEffect(() => {

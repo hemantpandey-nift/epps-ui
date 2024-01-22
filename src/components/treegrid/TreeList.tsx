@@ -20,13 +20,16 @@ const TreeList = () => {
   const userTreeData = userList.map((data, index) => {
     return {
       key: `parent-${index + 1}`,
-      name: data.name,
+      name: data?.name
+        ?.split(" ")
+        .map((el) => `${el[0].toUpperCase()}${el.slice(1).toLowerCase()}`)
+        .join(" "),
       age: data.age,
       weight: data.weight,
       membershipType: data.userMembership.membershipType,
       children: data.userMembership.availibilityDays.map((el, i) => ({
         id: `child-${i + 1}`,
-        name: el,
+        name: `${el[0].toUpperCase()}${el.slice(1).toLowerCase()}`,
       })),
     };
   });
@@ -39,7 +42,6 @@ const TreeList = () => {
     <>
       <div className="row">
         <div className="col text-center">
-          <h2 className="text-2xl text-blue-400">User Availibility tree</h2>
           <div className={styles.actionsDiv}>
             <div
               style={{

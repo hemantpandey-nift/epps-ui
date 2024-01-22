@@ -16,7 +16,6 @@ const Tree = ({ data = [] }) => {
 };
 
 const TreeNode = ({ node }) => {
-  console.log("node:", node);
   const [childVisible, setChildVisiblity] = useState(false);
 
   const hasChild = node.children ? true : false;
@@ -35,7 +34,7 @@ const TreeNode = ({ node }) => {
           </div>
         )}
 
-        <div className="col d-tree-head">{node.name}</div>
+        <div className="col d-tree-head text-xl text-blue-700">{node.name}</div>
         {node?.membershipType && (
           <div className={`treeCol ${node?.membershipType.toLowerCase()}`}>
             <span>{node?.membershipType?.toUpperCase()}</span>
